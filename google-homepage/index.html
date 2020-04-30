@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<style>
+    main {
+        text-align: center;
+        padding-top: 50px;
+    }
+    div {
+        border-radius: 10px;
+        border-width: 10px;
+    }
+    form {
+        border-width: 10px;
+        text-align: center;
+        padding: 30px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        text-color: grey;
+        display: inline;
+        padding: 5px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+    footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+    }
+    li a {
+        color: #696969;
+        text-decoration: none;
+    }
+    li a:hover {
+        text-decoration: underline; 
+        color: #666;
+    }
+    input[type=text] {
+        width: 50%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('magnifying_glass.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat; 
+        padding: 12px 20px 12px 40px;
+    }
+    input:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1rem;
+    }
+    button {
+        margin-top: 20px;
+        width: 120px;
+        height: 30px;
+        border: 1px;
+        text-align: center;
+        border: 1.5px grey;
+        border-radius: 8px;
+    }
+    button:hover {
+        border-style: solid;
+        border-color: #666;
+        background-color: lightgrey;
+        color: black;
+    }
+</style>
+
+<ul>
+    <li><a href="default.asp">About</a></li>
+    <li><a href="store.asp">Store</a></li>
+    <li style="float:right"><a href="images.asp">Images</a></li>
+    <li style="float:right"><a href="Gmail.asp">Gmail</a></li>
+</ul>
+<main>
+    <a href="#"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></a>
+</main>
+<form action="/submit search">
+    <input type="text" placeholder="">
+    <div>
+        <button style="color : #666" type="submit" class="button">Google Search</button>
+        <button style="color : #666" type="submit" class="button2">I'm Feeling Lucky</button>
+    </div>
+</form>
+<footer id="footer">
+    <ul>
+        <li><a href="business.asp">Business</a></li>
+        <li><a href="howsearchworks.asp">How Search Works</a></li>
+        <li style="float:right"><a href="terms.asp">Terms</a></li>
+        <li style="float:right"><a href="privacy.asp">Privacy</a></li>
+    </ul>
+</footer>
